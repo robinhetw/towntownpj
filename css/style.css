@@ -74,27 +74,19 @@ li {
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-.nav ul li:hover::after {
+.nav ul li:hover::after,.nav ul li.static::after {
   left: 0;
   opacity: 1;
   width: 100%;
 }
-.nav ul li.static::after {
-  left: 0;
-  opacity: 1;
-  width: 100%;
-}
-
+ 
 .nav ul li a {
   display: block;
   padding: 5px 10px;
   color: #cec1b7;
 }
 
-.nav ul li:hover img {
-  margin: 8px auto;
-}
-.nav ul li.static img {
+.nav ul li:hover img, .nav ul li.static img {
   margin: 8px auto;
 }
 
@@ -128,6 +120,7 @@ li {
   top: 15vh;
   left: 45vw;
   animation: drop 2s infinite;
+  filter:drop-shadow(1px 1px 5px rgba(51, 51, 51, 0.562));
 }
 .animation-show {
   animation: fadeout 4s;
@@ -209,6 +202,10 @@ li {
 
 .projectMain {
   height: calc(100vh - 250px);
+}
+
+.projectContent{
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -224,10 +221,11 @@ li {
   width: calc(33.3% - 100px);
   height: calc(40% - 30px);
   overflow: hidden;
+  margin-bottom: 5px;
 }
 .projectImg {
   width: 99%;
-  height: 80%;
+  height: 75%;
   overflow: hidden;
 }
 
@@ -235,9 +233,35 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
+  filter:brightness(.5);
 }
 .projectMain figure a:hover img {
   width: 105%;
   transform: scale(1.2);
+  filter:brightness(1);
+}
+
+.projectMain figure a:hover p{
+ color: #796c66;
+}
+/*project page content*/
+
+.projectMainContent{
+  display: flex;
+}
+
+.ContentGallery{
+  width:40%;
+  
+}
+.ContentInfo{
+  width:60%;
+}
+.projectGalleryLi{
+  
+}
+
+.imageGallery img{
+  width: 100%;
 }
