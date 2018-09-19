@@ -33,3 +33,9 @@ $('#imageGallery').lightSlider({
       });
   }   
 });  
+
+/*index light box*/
+$('#aniimated-thumbnials').lightGallery({
+  thumbnail:true
+}); 
+

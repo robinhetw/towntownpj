@@ -8,22 +8,27 @@
     <link rel="stylesheet" href="css/normalize.css">
 
     <link href="images/favicon.ico"" rel=" shortcut icon" type="image/ico" />
-     <!--animate CSS-->
-     <link rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!--animate CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
     <!--背景幻燈片-->
     <link rel="stylesheet" href="JS/vegas/vegas.min.css">
+    <!--lightbox + gallery -->
+    <link rel="stylesheet" href="css/lightslider.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
 
+    <!--ICon-->
+    <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-   
+
 
     <title>湯湯水水設計工作室</title>
 
 </head>
 
 <body>
+    
     <header>
         <div class="container header">
             <div class="logo">
@@ -36,29 +41,29 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="">
-                            <img src="images/aboutme.png" alt="aboutme"> About us</a>
+                        <a href="">About us</a>
+                    </li>
+                    <li class="toggleMenu">
+                        <a href="">Projects<ion-icon name="arrow-dropdown"></ion-icon></a>
+                        <ul class="submenu shadow">
+                            <li><a href="">Graphic</a></li>
+                            <li><a href="">Logotype</a></li>
+                            <li><a href="">Public issue</a></li>
+                            <li><a href="">Photography</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="graphic.html"><img src="images/graphic.png" alt="graphic">Graphic</a>
+                        <a href="">Customers</a>
                     </li>
                     <li>
-                        <a href=""><img src="images/logotype.png" alt="logotype">Logotype</a>
-                    </li>
-                    <li>
-                        <a href=""><img src="images/fightissue.png" alt="Fight for issue">Fight for ISSUE</a>
-                    </li>
-                    <li>
-                        <a href=""><img src="images/photography.png" alt="photography">Photography</a>
-                    </li>
-                    <li>
-                        <a href=""><img src="images/contact.png" alt="contact">Contact</a>
+                        <a href="">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="main  position-relative">
+
+    <div class="main position-relative">
         <div class="animation-show">
             <ul class="position-absolute">
 
@@ -75,6 +80,103 @@
         </div>
 
 
+    </div>
+
+    <section class="container section">
+        <h3 class="titleH3">About Us</h3>
+        <div class="sectionContent section-about">
+            <div class="aboutContentPic"></div>
+            <div class="aboutContentPic"></div>
+            <div class="aboutContentDiscribe"></div>
+        </div>
+    </section>
+    <section class="section projects">
+        <div class="container">
+            <h3 class="titleH3">Projects</h3>
+            <div>
+                <div id="aniimated-thumbnials">
+                    <a href="images/cat/cat300_200_1.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_1.jpg" />
+                    </a>
+                    <a href="images/cat/cat300_200_2.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_2.jpg" />
+                    </a>
+                    <a href="images/cat/cat300_200_1.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_1.jpg" />
+                    </a>
+                    <a href="images/cat/cat300_200_2.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_2.jpg" />
+                    </a>
+                    <a href="images/cat/cat300_200_1.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_1.jpg" />
+                    </a>
+                    <a href="images/cat/cat300_200_2.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_2.jpg" />
+                    </a>
+                    <a href="images/cat/cat300_200_1.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_1.jpg" />
+                    </a>
+                    <a href="images/cat/cat300_200_2.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_2.jpg" />
+                    </a>
+                    <a href="images/cat/cat300_200_1.jpg">
+                        <ion-icon name="search"></ion-icon>
+                        <img src="images/cat/cat300_200_1.jpg" />
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container section">
+        <h3 class="titleH3">Our Customers</h3>
+        <div class="sectionContent">
+            <div class="aboutContentPic"></div>
+            <div class="aboutContentPic"></div>
+            <div class="aboutContentDiscribe"></div>
+        </div>
+    </section>
+    <section class="section contact">
+        <div class="contactMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.415460667069!2d121.55011171457984!3d25.019971045008575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa30eca54065%3A0x44597a2c7d2bc183!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A6Iel6b6N6KGXMTUx5be3MjfomZ8!5e0!3m2!1szh-TW!2stw!4v1537339504038"
+                width="100%" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="contactInfo">
+
+            <div class="contactInfoBg">
+                <h3 class="titleH3">Contact Us</h3>
+                <div class="contactInfoContent">
+                    <p class="slogan">Are you ready to hire an experienced web developer?</p>
+                    <p class="slogan slogan2">
+                        That's great! I look forward to hearing from you.</p>
+                    <P>
+                        <ion-icon name="call"></ion-icon>
+                        Number：0800-00-122 Time：Mon - Fri 9:00 A.M. ~ 6 P.M.
+                    </P>
+                    <P>
+                        <ion-icon name="mail"></ion-icon>
+                        Email：XXXX@Gmail.com
+                    </P>
+                    <P>
+                        <ion-icon name="pin"></ion-icon>
+                        Address：大安區臥龍街151巷27號
+                    </P>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
     </section>
     <footer class=footer>
         <div class="container">
@@ -82,12 +184,16 @@
                 <ul>
                     <li class="JhengHei">品牌形象周邊規劃。平面視覺/印刷物設計</li>
                     <li class="JhengHei">商標識別設計。插畫繪製</li>
-                    <li>&copy; Copyright 2018 <span class="JhengHei"> 湯湯水水設計工作所 </span> &amp; RobinHe Workshop </li>
+                    <li>&copy; Copyright 2018 <span class="JhengHei"> 湯湯水水設計工作所 </span> &amp; RobinHe Workshop, All
+                        rights reserved. </li>
                 </ul>
                 <ul>
                     <li>Graphic Design / Branding Project / KeyVisual</li>
                     <li>Illustration / Logotype</li>
                 </ul>
+                <a href="">
+                    <ion-icon class="footerIcon" name="logo-facebook"></ion-icon>
+                </a>
             </div>
         </div>
     </footer>
@@ -97,6 +203,19 @@
 
     <!--背景幻燈片-->
     <script src="JS/vegas/vegas.min.js"></script>
+    <!--Icon-->
+    <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+
+    <!--lightbox+gallery-->
+    <script src="JS/lightslider.js"></script>
+    <script src="JS/lightgallery.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="JS/lg-thumbnail.min.js"></script>
+    <script src="JS/lg-fullscreen.min.js"></script>
+    <!-- API+Gmap
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="JS/gmaps.js"></script>-->
+
     <!--視差捲動
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>-->
 
