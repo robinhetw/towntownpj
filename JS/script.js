@@ -39,3 +39,8 @@ $('#aniimated-thumbnials').lightGallery({
   thumbnail:true
 }); 
 
+/*scrolling*/
+
+$(function() {
+  $('html').smoothScroll(500);
+ });
