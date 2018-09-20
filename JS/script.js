@@ -2,7 +2,8 @@
 $("#example, .main").vegas({
   timer: false,
   slides: [{ src: "css/img/slider.png" }, { src: "css/img/slider2.png" }],
-  animation: "kenburnsUpRight"
+  animation: "random",
+  overlay: "JS/vegas/overlays/06.png"
 });
 
 /*視差捲動*/
@@ -11,36 +12,48 @@ $("#example, .main").vegas({
 //var parallaxInstance = new Parallax(scene);
 
 /*light box*/
-$(document).ready(function () {
+$(document).ready(function() {
   $("#lightSlider").lightSlider({
-      auto: true,
-      loop: true,
-      pauseOnHover: true
+    auto: true,
+    loop: true,
+    pauseOnHover: true
   });
 });
 
-$('#imageGallery').lightSlider({
-  gallery:true,
-  item:1,
-  loop:true,
-  thumbItem:9,
-  slideMargin:0,
+$("#imageGallery").lightSlider({
+  gallery: true,
+  item: 1,
+  loop: true,
+  thumbItem: 9,
+  slideMargin: 0,
   enableDrag: false,
-  currentPagerPosition:'left',
+  currentPagerPosition: "left",
   onSliderLoad: function(el) {
-      el.lightGallery({
-          selector: '#imageGallery .lslide'
-      });
-  }   
-});  
+    el.lightGallery({
+      selector: "#imageGallery .lslide"
+    });
+  }
+});
 
 /*index light box*/
-$('#aniimated-thumbnials').lightGallery({
-  thumbnail:true
-}); 
+$("#aniimated-thumbnials").lightGallery({
+  thumbnail: true
+});
 
 /*scrolling*/
 
 $(function() {
-  $('html').smoothScroll(500);
- });
+  $("html").smoothScroll(500);
+});
+
+/* 變換 logo size */
+
+$(window).scroll(function() {
+  if ($(document).scrollTop()> 100) {
+    $('#logo').addClass('logoChangeImg');
+    $('#logo').removeClass('logoTopImg ');
+  } else {
+    $('#logo').removeClass('logoChangeImg');
+    $('#logo').addClass('logoTopImg');
+  }
+});
