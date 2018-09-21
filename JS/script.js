@@ -1,7 +1,9 @@
 /*幻燈片*/
 $("#example, .main").vegas({
   timer: false,
-  slides: [{ src: "css/img/slider.png" }, { src: "css/img/slider2.png" }],
+  slides: [{ src: "css/img/1600_930_slider1.jpg" },{ src: "css/img/1600_930_slider2.jpg" },
+  { src: "css/img/1600_930_slider3.jpg" }],
+ 
   animation: "random",
   overlay: "JS/vegas/overlays/06.png"
 });
@@ -49,7 +51,7 @@ $(function() {
 /* 變換 logo size */
 
 $(window).scroll(function() {
-  if ($(document).scrollTop()> 100) {
+  if ($(document).scrollTop()> 20) {
     $('#logo').addClass('logoChangeImg');
     $('#logo').removeClass('logoTopImg ');
   } else {
