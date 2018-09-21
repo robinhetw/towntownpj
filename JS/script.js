@@ -63,8 +63,9 @@ $(window).scroll(function() {
 
 /* read more*/
 $('#readMoreButton').click(function() {
-  $('#readMoreBlock').removeClass('readClose');
-  $('#readMoreBlock').addClass('readOpen');
+  /*$('#readMoreBlock').removeClass('readClose');
+  $('#readMoreBlock').addClass('readOpen');*/
+  $('#readMoreBlock').show(300);
   $('#readMoreButton').remove();
 
 });
