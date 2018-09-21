@@ -16,6 +16,7 @@ $("#example, .main").vegas({
 /*light box*/
 $(document).ready(function() {
   $("#lightSlider").lightSlider({
+    autoWidth:true,
     auto: true,
     loop: true,
     pauseOnHover: true
@@ -58,4 +59,12 @@ $(window).scroll(function() {
     $('#logo').removeClass('logoChangeImg');
     $('#logo').addClass('logoTopImg');
   }
+});
+
+/* read more*/
+$('#readMoreButton').click(function() {
+  $('#readMoreBlock').removeClass('readClose');
+  $('#readMoreBlock').addClass('readOpen');
+  $('#readMoreButton').remove();
+
 });

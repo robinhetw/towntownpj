@@ -448,7 +448,6 @@ li:hover ul.submenu {
   padding: 10px;
   width: 160px;
   transition: all 0.3s ease-in-out;
-  font-family: "微軟正黑體", "Microsoft JhengHei";
 }
 
 .projectMain figure {
@@ -565,3 +564,29 @@ li:hover ul.submenu {
   display: inline-block;
   margin-left: 10px;
 }
+
+.readButton{
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin:15px auto;
+  text-transform: uppercase;
+  width:150px;
+  color: #a2938b;
+  border:1px solid #a2938b;
+  transition: all 0.3s ease-in-out;
+}
+.readButton:hover{
+  color: white;
+  background: #a2938b;
+}
+.readClose{
+  display: none;
+}
+.readOpen{
+  display: block;
+}
+
+/*page3 other projects*/
