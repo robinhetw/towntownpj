@@ -69,3 +69,11 @@ $('#readMoreButton').click(function() {
   $('#readMoreButton').remove();
 
 });
+/* menu*/
+
+(function () {
+	$('.menu-wrapper').on('click', function() {
+    $('.hamburger-menu').toggleClass('animate');
+    $("#js-open").toggleClass("active");
+	})
+})();

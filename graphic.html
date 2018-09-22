@@ -21,7 +21,10 @@
     <!--ICon-->
     <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
 
+ 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobileStyle.css">
+
 
 
     <title>湯湯水水設計工作室</title>
@@ -35,35 +38,33 @@
             <div id="logo" class=" logoTopImg">
 
                 <a href="index.html">
-                    <img class="logoImg" src="images/logooffical.svg" alt="logo" srcset="">
-                    <!--
-                            <img src="images/logo.png" alt="logo">
-                            <div class="logoBar"></div>
-                            <img src="images/logoword.png" alt="logo">
-                              -->
+                    <img class="logoImg" src="images/logooffical.svg" alt="logo">
                 </a>
 
 
             </div>
             <nav class="nav">
-                <ul>
+                <div class="menu-wrapper">
+                    <div class="hamburger-menu"></div>
+                </div>
+                <ul  id="js-open" class="navUl">
                     <li>
                         <a href="index.html#js-aboutUs">About us</a>
                     </li>
                     <li class="toggleMenu">
                         <a href="index.html#js-Project">Projects<ion-icon name="arrow-dropdown"></ion-icon></a>
-                        <ul class="submenu shadow">
+                        <ul class="submenu">
                             <li><a href="graphic.html"">Graphic</a></li>
                             <li><a href="">Logotype</a></li>
                             <li><a href="">Public issue</a></li>
                             <li><a href="">Photography</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="navLiTop">
                         <a href="
                                     index.html#js-customers">Customers</a>
                             </li>
-                            <li>
+                            <li class="navLiTop">
                                 <a href="index.html#js-contact">Contact</a>
                             </li>
                         </ul>
