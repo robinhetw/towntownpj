@@ -1,0 +1,79 @@
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+  
+  .projectMain {
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+  }
+  /*nav*/
+  .nav {
+  }
+  #js-open {
+    display: none;
+    transition: 0.5s;
+  }
+  #js-open.active {
+    display: block;
+  }
+
+  .nav {
+    position: relative;
+  }
+  .nav ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    transform: translate(-100%, 5%);
+    background: white;
+  }
+  .navUl {
+    box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.342);
+  }
+  .nav ul li {
+    display: block;
+    text-align: center;
+    margin: 5vh auto;
+    padding: 10px auto;
+    font-size: 2rem;
+  }
+  .menu-wrapper {
+    display: block;
+  }
+
+  .toggleMenu {
+    position: static;
+  }
+
+  ul.submenu {
+    opacity: 1;
+    transform: translateY(0px);
+    display: block;
+    position: static;
+    max-height: 100%;
+    box-shadow: none;
+  }
+  .navLiTop {
+    transform: translateY(-4vh);
+  }
+
+  /*page2*/
+  .projectMain figure {
+    max-width: 100%;
+  }
+  /*page3*/
+  .projectMainContent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ContentGallery {
+    width: 56vw;
+    margin-bottom: 4vh;
+  }
+  .ContentInfo {
+    width: 100%;
+  }
+}
