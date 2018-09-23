@@ -77,3 +77,5 @@ $('#readMoreButton').click(function() {
     $("#js-open").toggleClass("active");
 	})
 })();
+
+
