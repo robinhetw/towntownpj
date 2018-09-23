@@ -348,6 +348,30 @@ li:hover ul.submenu {
 /*section-about*/
 .section-about {
   display: flex;
+  justify-content: space-between;
+}
+.aboutContentPic{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: grayscale(0.8);
+  background-image:url(img/person.jpg);
+  background-position: center center;
+  background-size: 230% ;
+}
+
+.aboutContentWord div{
+  font-size: 1.2rem;
+  float: right;
+  writing-mode: vertical-rl;
+  line-height: 4rem;
+  letter-spacing: 1rem;　
+  padding-left:100px;
+}
+.aboutContentWord div:nth-child(2){
+  font-size: 1.1rem;
+  line-height:3.5rem;
+  letter-spacing: 0.5rem;　
 }
 
 /*index section-project*/
@@ -389,6 +413,7 @@ li:hover ul.submenu {
 .sectionContent {
   background: #796c66;
   height: 300px;
+ 
 }
 .projects {
   background: #fff4e8;
