@@ -128,7 +128,9 @@ header {
   cursor: pointer;
   transform: translateY(-10px);
 }
-
+.navUl{
+  
+}
 .hamburger-menu,
 .hamburger-menu:after,
 .hamburger-menu:before {
@@ -579,7 +581,7 @@ margin:10px auto;
   height: 100%;
   object-fit: cover;
   transition: all 0.5s ease-in-out;
-  filter: brightness(0.5);
+  filter: brightness(0.8);
 }
 .projectMain figure a:hover img {
   width: 105%;
@@ -697,3 +699,4 @@ margin:10px auto;
 .readOpen {
   display: block;
 }
+
