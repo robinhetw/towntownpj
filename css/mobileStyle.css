@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
   section{
-    overflow: hidden;
+   overflow: hidden;
   }
   .container {
     width: 90vw;
@@ -35,6 +35,7 @@
   }
   .navUl {
     box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.342);
+    overflow: scroll;
   }
   .nav ul li {
     display: block;
@@ -176,12 +177,14 @@
   }
 }
 
+
+/*400*/
 @media screen and (max-width: 400px) {
   /*NAV*/
 
   header{
   padding: 20px 0;
-  overflow: hidden;
+  
   }
 .mobile400_logo{
   position: relative;
