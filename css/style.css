@@ -33,7 +33,9 @@ li {
 .shadow {
   box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.342);
 }
-
+.underline{
+  text-decoration: underline;
+}
 /*Header*/
 
 header {
@@ -57,6 +59,12 @@ header {
 .logoImg {
   width: 100%;
   transition: all 0.5s ease-in-out;
+}
+
+.logoImgMobile{
+  display: none;
+
+  
 }
 
 .logoChangeImg {
@@ -360,18 +368,23 @@ li:hover ul.submenu {
   background-size: 230% ;
 }
 
-.aboutContentWord div{
-  font-size: 1.2rem;
+.aboutContentWord {
   float: right;
   writing-mode: vertical-rl;
+}
+
+.aboutContentWord1{
+  font-size: 1.2rem;
   line-height: 4rem;
   letter-spacing: 1rem;　
-  padding-left:100px;
 }
-.aboutContentWord div:nth-child(2){
-  font-size: 1.1rem;
+
+.aboutContentWord2{
+  font-family: 'Spectral', serif;
+  font-style:italic;
+  font-size: 400;
   line-height:3.5rem;
-  letter-spacing: 0.5rem;　
+  letter-spacing: 0.2rem;　
 }
 
 /*index section-project*/
@@ -415,9 +428,19 @@ li:hover ul.submenu {
 }
 
 .sectionContent {
-  background: #796c66;
-  height: 300px;
- 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; 
+}
+.sectionContent div{
+ width: 20%;
+ text-align: center;
+ margin:20px;
+ padding:20px;
+}
+.sectionContent div img{
+
 }
 .projects {
   background: #fff4e8;
@@ -518,19 +541,24 @@ li:hover ul.submenu {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  
 }
 .projectMain a p {
   z-index: 999;
   color: #a2938b;
-  border: 1px solid #a2938b;
+  border: 1px solid #a2938b;g
   margin: 15px auto;
   text-transform: uppercase;
   border-radius: 10px;
-  text-align: center;
+ 
   padding: 10px;
   width: 160px;
   transition: all 0.3s ease-in-out;
+
+  overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+margin:10px auto;
 }
 
 .projectMain figure {

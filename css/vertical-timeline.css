@@ -105,7 +105,7 @@ label {
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 .radio:checked ~ .content p {
-  max-height: 200px;
+  max-height: 300px;
  /* color: #eee9dc;*/
   color: #a2938b;
   transition: color 0.3s linear 0.3s;

@@ -1,8 +1,11 @@
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  section{
+    overflow: hidden;
+  }
   .container {
     width: 90vw;
   }
-  
+
   .projectMain {
     margin-top: 10vh;
     margin-bottom: 7vh;
@@ -60,11 +63,106 @@
     transform: translateY(-4vh);
   }
 
+  /*main*/
+
+  .main{
+    height: 50vh;
+  }
+  .main ul {
+    z-index: 999;
+    top: 10vh;
+    left: 7vw;
+  }
+  .writing-mode-1,.writing-mode-2,.writing-mode-3{
+    font-size: 1.5rem;
+    top: 12vh;
+  }
+  .writing-mode-1 {
+    right:7vw;
+  }
+  .writing-mode-2 {
+    right:13vw;
+  }
+  .writing-mode-3 {
+    right:23vw;
+  }
+
+  .ProjectButton{
+    padding: 15px;
+  }
+
+  /*about us*/
+  .aboutContentWord1{
+    line-height: 2rem;
+  }
+  
+  .aboutContentWord2{
+    font-family: 'Spectral', serif;
+    font-style:italic;
+    font-size: 400;
+    line-height:2rem;
+    letter-spacing: .2rem;　
+  }
+/*projects*/
+#aniimated-thumbnials a{
+  max-width: calc(33.33% - 3px);
+  height: 150px;
+}
+.sectionContent{
+  justify-content:space-between;
+  height: 30vh;
+  margin-bottom: 30px;
+}
+
+.sectionContent div{
+  width: 25%;
+  margin:10px 15px;
+  padding: 0;
+ }
+
+ /*contact*/
+.contact{
+  flex-direction: column-reverse;
+}
+.contactMap,.contactInfo{
+  width: 100%;
+ }
+ .contactInfoBg .titleH3 {
+  color: #fff;
+  
+}
+.contactInfo {
+  height: 100%;
+  position: static;
+}
+.contactInfoBg {
+  position: static;
+  padding-bottom: 5%;
+}
+.contactInfoContent .slogan2 {
+  padding-bottom: 2%;
+}
+.contactInfoContent{
+  text-align: center;
+}
+
+.contactMap{
+  height: 200px;
+}
+ 
+/*customers*/
+
+
   /*page2*/
   .projectMain figure {
     max-width: 100%;
   }
   /*page3*/
+  .projectMain-2 {
+    margin-top: 12vh;
+  
+  }
+  
   .projectMainContent {
     flex-wrap: wrap;
     justify-content: center;
@@ -76,4 +174,127 @@
   .ContentInfo {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 400px) {
+  /*NAV*/
+
+  header{
+  padding: 20px 0;
+  overflow: hidden;
+  }
+.mobile400_logo{
+  position: relative;
+}
+  .hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 40px;
+  height: 3px;
+}
+  .menu-wrapper {
+    width: 20px;
+    height:10px;
+    transform: translate(-25px,-25px);
+  }
+  
+  .logoImg {
+    width: 50%;
+    
+    
+  }
+
+  
+  .main ul {
+    top: 5vh;
+  }
+  .main ul li{
+    font-size: 1rem;
+  }
+  .writing-mode-1,.writing-mode-2,.writing-mode-3{
+    font-size: 1rem;
+  }
+
+  .writing-mode-2 {
+    right:12vw;
+  }
+ .blogo{
+  width: 22vw;
+  left: 40vw;
+ }
+
+ /*about*/
+
+.section-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutContentPic{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px auto;
+}
+.aboutContentWord{
+  margin: 0 auto;
+}
+.aboutContentWord1{
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: .5rem;　
+}
+.aboutContentWord2{
+  line-height:1.5rem;
+  letter-spacing: .2rem;　
+}
+
+/*projects*/
+#aniimated-thumbnials{
+
+}
+#aniimated-thumbnials a{
+  width: 100vw;
+ 
+  height: 300px;
+  
+  
+}
+#aniimated-thumbnials a img{
+width:100%;
+height: 100%;
+}
+
+
+/*customers*/
+.sectionContent{
+  height: 50vh;
+}
+.sectionContent div{
+  width: 45%;
+  margin:10px 5px;
+ }
+.customer_logo{
+  width: 120%;
+}
+
+/*contact*/
+.contact{
+  height: 80vh;
+}
+.contactInfo{
+ 
+}
+.contactInfoBg {
+  
+}
+
+  /*page3*/
+  .ContentInfo {
+  
+    padding: 10px 10px;
+    margin-left: 0px;
+  }
+
+
+  
 }
