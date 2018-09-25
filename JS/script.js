@@ -77,8 +77,13 @@ $("#readMoreButton").click(function() {
   $(".menu-wrapper").on("click", function() {
     $(".hamburger-menu").toggleClass("animate");
     $("#js-open").toggleClass("active");
+  
   });
 })();
+$('.navUl li').click(function(){
+  $("#js-open").removeClass("active");
+  $(".hamburger-menu").removeClass("animate");
+});
 
 /*animated move */
 
