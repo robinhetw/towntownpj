@@ -700,3 +700,48 @@ margin:10px auto;
   display: block;
 }
 
+.js--wp--1{
+  opacity: 0;
+}
+
+.js--wp--1.animated{
+  opacity: 1;
+}
+
+
+.js--wp--2{
+  opacity: 0;
+}
+
+.js--wp--2.animated{
+  opacity: 1;
+}
+.js--wp--3{
+  opacity: 0;
+}
+
+.js--wp--3.animated{
+  opacity: 1;
+}
+.js--wp--4{
+  opacity: 0;
+}
+
+.js--wp--4.animated{
+  opacity: 1;
+}
+
+.js--wp--5{
+  opacity: 0;
+}
+
+.js--wp--5.animated{
+  opacity: 1;
+}
+.js--wp--6{
+  opacity: 0;
+}
+
+.js--wp--6.animated{
+  opacity: 1;
+}

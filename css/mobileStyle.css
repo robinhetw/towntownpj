@@ -40,8 +40,8 @@
   .nav ul li {
     display: block;
     text-align: center;
-    margin: 5vh auto;
-    padding: 10px auto;
+    margin: 20px auto;
+    padding: 5px auto;
     font-size: 2rem;
   }
   .menu-wrapper {
@@ -59,9 +59,10 @@
     position: static;
     max-height: 100%;
     box-shadow: none;
+
   }
   .navLiTop {
-    transform: translateY(-4vh);
+    transform: translateY(-15px);
   }
 
   /*main*/
@@ -222,9 +223,9 @@
   .nav ul li {
     display: block;
     text-align: center;
-    margin: 5vh auto;
-    padding: 10px auto;
-    font-size: 2rem;
+    margin: 20px auto;
+    padding: 5px auto;
+    font-size: 1rem;
   }
   .menu-wrapper {
     display: block;
@@ -243,7 +244,7 @@
     box-shadow: none;
   }
   .navLiTop {
-    transform: translateY(-4vh);
+    transform: translateY(-15px);
   }
 
 
